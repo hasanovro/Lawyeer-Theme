@@ -1,0 +1,445 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    overflow: hidden;
+    box-shadow: 2px 2px 10px #bdbdbd;
+}
+.nav_bar{
+    background-color: white;
+    box-shadow: 2px 2px 10px #bdbdbd;
+}
+.nav_bar li {
+    
+    padding: 10px 15px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .5s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #F2632C;   
+}
+.cleardiv{
+    clear: both;
+}
+/* header part end */
+.banner{
+    background-image: url('bg_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.banner h1{
+    
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.banner_icon{
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: updown;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.banner_icon i{
+    
+    color: white;
+    font-size: 20px;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 83%;
+    }
+}
+/* banner part end */
+.who_we_are{
+    padding: 100px 0;
+}
+.who_we_are p{
+    
+    font-size: 16px;
+    font-weight: 400;
+    color: #B0B0B1;
+    transition: .5s all ease-in-out;
+}
+.title1{
+    text-align: left;
+}
+.title1 h1{
+
+    font-size: 40px;
+    font-weight: bold;
+    color: #28377E;
+    margin-top: 10px;
+    transition: .5s all ease-in-out;
+}
+.title1 span{
+
+    display: block;
+    height: 5px;
+    width: 0px;
+    /*! color: red; */
+    background: #28377E;
+    transition: .5s all ease-in-out;
+}
+.who_we_are:hover .title1 span{
+    width: 100px;
+}
+.who_we_are:hover .title1 h1{
+    color: #F2632C;
+}
+.who_we_are:hover p{
+    color: #28377E;
+}
+.who_we_are_ai{
+    display: flex;
+    align-items: center;
+}
+/* who we are part end */
+
+.what_we_do{
+
+    padding: 100px 0 100px 0;
+    background-color: #F7F8F8;
+    background-image: url('bg1.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 1000px;
+}
+.wwd{
+    position: relative;
+    text-align: center;
+    /*! padding: 10px 0; */
+    margin-bottom: 20px;
+}
+.wwd::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, .1) , rgba(43,47,133,1) );
+    transition: .5s all ease-in-out;
+}
+.wwd:hover::after{
+    
+    height: 100%;
+}
+
+.wwd img{
+    width: 100%;
+    min-height: 50vh; 
+    /*! height: 72%; */
+}
+.wwd_text{
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    z-index: 1;
+}
+.wwd:hover .wwd_text{
+
+    top: 50%;
+    opacity: 1;
+    
+}
+.wwd_text h1{
+
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.wwd_icon{
+
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    z-index: 1;
+}
+.wwd_icon i{
+
+    color: white;
+    font-size: 30px;
+}
+.wwd:hover .wwd_icon{
+    left: 50%;
+    opacity: 1;
+}
+.title2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title2 span{
+    display: block;
+    height: 5px;
+    width: 0px;
+    /*! color: red; */
+    background: #28377E;
+    transition: .5s all ease-in-out;
+    margin: auto;
+}
+.what_we_do:hover .title2 span{
+    width: 100px;
+}
+.title2 h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #28377E;
+    margin-top: 10px;
+    transition: .5s all ease-in-out;
+}
+.what_we_do:hover .title2 h1{
+    color: #F2632C;
+}
+/* what we do section end */
+.attorneys{
+    background-image: url('attorneybg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 100px 0 80px 0;
+}
+.attorneys:hover .title1 span{
+    width: 100px;
+    background-color: #F2632C;
+}
+.title1 h1{
+    color: white;
+}
+.attornyes_title p{
+    color: #929dcf;
+    font-size: 16px;
+    font-weight: 400;
+}
+.rese h5{
+    color: white;
+    transition: .5s all ease-in-out;
+}
+.rese h5:hover{
+    color: #F2632C;
+}
+.attorney_image{
+    
+    position: relative;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.attorney_image::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, .1) , rgba(43,47,133,.7) );
+    transition: .5s all ease-in-out;
+}
+.attorney_image:hover::before{
+    height: 100%;
+}
+.attorney_image img{
+    
+    width: 100%;
+    height: 50vh;
+    min-height: 40vh;
+}
+.attorney_image h1{
+    
+    
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    /*! background-size: cover; */
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.attorney_image:hover.attorney_image h1{
+    opacity: 1;
+    top: 80%;
+}
+.attornyes_title{
+    padding-bottom: 20px;
+}
+/* attorney part end */
+.language{
+    margin: 60px auto;
+}
+.lng{
+    padding: 10px;
+}
+.lng h3{
+    
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #28377E;
+}
+.lng p{
+
+    font-size: 16px;
+    color: #B4B2B1;
+}
+.lng h5{
+
+}
+.lng h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #f2622c;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.lng h5:hover{
+    
+    color: #929dcf;
+}
+.language:hover .title2 span{
+    width: 100px;
+}
+.language:hover .title2 h1{
+    color: #F2632C;
+}
+/* language part end */
+.contact{
+    background-color: #28377E;
+    padding: 50px 0;
+}
+.contacttitle{
+    text-align: center;
+}
+.contacttitle h1{
+    font-size: 40px;
+    font-weight: 650;
+    color: #ffffff;
+}
+.formc{
+    
+    text-align: center;
+    margin: auto;
+}
+.formc button{
+    
+    
+    padding: 10px 40px;
+    margin: 30px;
+    border: none;
+    background-color: #F2632C;
+    color: white;
+    border-radius: 2px;
+    transition: .3s;
+    border: 1px solid #F2632C;
+}
+.formc button:hover{
+    
+    
+    
+    background: none;
+    border: 1px solid #F2632C;
+    color: #F2632C;
+    
+}
+.form{
+
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+.title4{
+    text-align: center;
+}
+.title4 h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.title4 span{
+    display: block;
+    height: 5px;
+    width: 0px;
+    /*! color: red; */
+    background: #F2632C;
+    transition: .5s all ease-in-out;
+    margin: auto;
+}
+.contact:hover .title4 span{
+    width: 100px;
+}
+
+/* contact part end */
+footer{
+
+    background-color: #0c1234;
+    padding: 20px;
+}
+.footerpart{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ftext{
+
+    padding-left: 10px;
+}
+.ftext p{
+
+    padding: 0;
+    margin: 0;
+    color: #616ca8;
+    font-size: 14px;
+}
+.ficon{
+    text-align: right;
+    margin-right: 10px;
+}
+.ficon i{
+
+    padding: 0 10px;
+    font-size: 20px;
+    color: #616ca8;
+    transition: .5s all ease-in-out;
+}
+.ficon i:hover{
+    color: #28377E;
+}
+/* Ended by the help of Almighty Allah */
+
